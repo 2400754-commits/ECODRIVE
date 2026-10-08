@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ECODRIVE - Projeto de controle e monitoramento de emissão de gases">
+
+    <title>ECODRIVE | EXPOTEC 2026</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     PROGRESSO DA PÁGINA
+===================================================== -->
+
+<div id="scroll-progress"></div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header id="header">
+
+    <div class="logo">
+
+        <div class="logo-symbol">
+            🌱
+        </div>
+
+        <div>
+
+            <strong>ECODRIVE</strong>
+
+            <small>
+                EXPOTEC 2026
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <nav id="menu">
+
+        <a href="#inicio">Início</a>
+
+        <a href="#problema">O Problema</a>
+
+        <a href="#solucao">Solução</a>
+
+        <a href="#funcionamento">Funcionamento</a>
+
+        <a href="#simulador">Simulador</a>
+
+        <a href="#equipe">Equipe</a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <button id="theme-btn"
+                title="Alternar tema">
+
+            🌙
+
+        </button>
+
+        <button id="presentation-btn"
+                title="Modo apresentação">
+
+            ⛶
+
+        </button>
+
+        <button id="menu-btn"
+                class="menu-btn">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="inicio"
+         class="hero">
+
+    <div class="hero-grid">
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+
+                <span class="pulse"></span>
+
+                PROJETO EXPOTEC 2026
+
+            </div>
+
+
+            <h1>
+
+                Tecnologia para um
+                <span>ar mais limpo.</span>
+
+            </h1>
+
+
+            <p>
+
+                Uma representação tecnológica de um sistema
+                de monitoramento de emissão de gases
+                automotivos utilizando Arduino.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#simulador"
+                   class="btn btn-primary">
+
+                    ⚡ Testar sistema
+
+                </a>
+
+                <a href="#problema"
+                   class="btn btn-outline">
+
+                    Conhecer o projeto →
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div>
+
+                    <strong>01</strong>
+
+                    <span>Projeto</span>
+
+                </div>
+
+                <div>
+
+                    <strong>04</strong>
+
+                    <span>Etapas</span>
+
+                </div>
+
+                <div>
+
+                    <strong>100%</strong>
+
+                    <span>Tecnologia</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARRO -->
+
+        <div class="hero-car-area">
+
+            <div class="radar-circle"></div>
+
+            <div class="radar-circle circle-2"></div>
+
+            <div class="radar-circle circle-3"></div>
+
+
+            <div id="hero-car"
+                 class="hero-car">
+
+                🚗
+
+            </div>
+
+
+            <div id="smoke-container"
+                 class="smoke-container">
+
+            </div>
+
+
+            <div class="floating-data data-one">
+
+                <span>CO₂</span>
+                <strong id="hero-co2">25%</strong>
+
+            </div>
+
+
+            <div class="floating-data data-two">
+
+                <span>STATUS</span>
+                <strong id="hero-status">NORMAL</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROBLEMA
+===================================================== -->
+
+<section id="problema"
+         class="section">
+
+    <div class="section-title">
+
+        <span>01 — O PROBLEMA</span>
+
+        <h2>
+
+            Por que monitorar
+            <strong>emissões?</strong>
+
+        </h2>
+
+        <p>
+
+            A Emissão de Gases por veículos é um dos fatores
+            relacionados à poluição atmosférica nas cidades.
+
+        </p>
+
+    </div>
+
+
+    <div class="problem-grid">
+
+
+        <div class="problem-text">
+
+            <h3>
+                O Desafio
+            </h3>
+
+            <p>
+
+                Motores de combustão liberam gases durante
+                seu funcionamento. Dependendo das condições
+                de operação e manutenção do veículo, essas
+                emissões podem aumentar.
+
+            </p>
+
+            <p>
+
+                Nosso projeto busca representar, de maneira
+                didática, como sensores e sistemas eletrônicos
+                podem ser utilizados para acompanhar essas
+                informações.
+
+            </p>
+
+
+            <div class="highlight-box">
+
+                <div class="highlight-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <strong>
+                        Nossa proposta
+                    </strong>
+
+                    <p>
+
+                        Transformar um conceito complexo
+                        em uma demonstração visual,
+                        interativa e fácil de entender.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gas-cards">
+
+
+            <div class="gas-card">
+
+                <div class="gas-icon">
+                    CO₂
+                </div>
+
+                <div>
+
+                    <strong>
+                        Dióxido de carbono
+                    </strong>
+
+                    <p>
+                        Representação do nível de CO₂.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="gas-card">
+
+                <div class="gas-icon">
+                    CO
+                </div>
+
+                <div>
+
+                    <strong>
+                        Monóxido de carbono
+                    </strong>
+
+                    <p>
+                        Representação do nível de CO.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="gas-card">
+
+                <div class="gas-icon">
+                    HC
+                </div>
+
+                <div>
+
+                    <strong>
+                        Hidrocarbonetos
+                    </strong>
+
+                    <p>
+                        Representação de hidrocarbonetos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SOLUÇÃO
+===================================================== -->
+
+<section id="solucao"
+         class="section dark-section">
+
+    <div class="section-title">
+
+        <span>02 — NOSSA SOLUÇÃO</span>
+
+        <h2>
+
+            Tecnologia + 
+            <strong>Sustentabilidade</strong>
+
+        </h2>
+
+        <p>
+
+            A ideia é utilizar componentes eletrônicos
+            para criar uma representação de monitoramento.
+
+        </p>
+
+    </div>
+
+
+    <div class="solution-grid">
+
+
+        <div class="solution-card">
+
+            <div class="solution-number">
+                01
+            </div>
+
+            <div class="solution-icon">
+                🔬
+            </div>
+
+            <h3>
+                Sensor
+            </h3>
+
+            <p>
+
+                Representa a coleta das informações
+                relacionadas aos gases.
+
+            </p>
+
+        </div>
+
+
+        <div class="solution-card">
+
+            <div class="solution-number">
+                02
+            </div>
+
+            <div class="solution-icon">
+                🔌
+            </div>
+
+            <h3>
+                Arduino
+            </h3>
+
+            <p>
+
+                Recebe os dados e realiza o processamento
+                da representação.
+
+            </p>
+
+        </div>
+
+
+        <div class="solution-card">
+
+            <div class="solution-number">
+                03
+            </div>
+
+            <div class="solution-icon">
+                📊
+            </div>
+
+            <h3>
+                Monitoramento
+            </h3>
+
+            <p>
+
+                Os valores são apresentados de forma
+                visual para facilitar a interpretação.
+
+            </p>
+
+        </div>
+
+
+        <div class="solution-card">
+
+            <div class="solution-number">
+                04
+            </div>
+
+            <div class="solution-icon">
+                🌎
+            </div>
+
+            <h3>
+                Conscientização
+            </h3>
+
+            <p>
+
+                A tecnologia é utilizada como ferramenta
+                de educação ambiental.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FUNCIONAMENTO
+===================================================== -->
+
+<section id="funcionamento"
+         class="section">
+
+    <div class="section-title">
+
+        <span>03 — FUNCIONAMENTO</span>
+
+        <h2>
+            Como o sistema funciona?
+        </h2>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">
+                01
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Emissão
+                </h3>
+
+                <p>
+
+                    O veículo produz gases durante
+                    o funcionamento do motor.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">
+                02
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Sensor
+                </h3>
+
+                <p>
+
+                    O sensor representa a identificação
+                    dos gases presentes.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">
+                03
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Arduino
+                </h3>
+
+                <p>
+
+                    O Arduino recebe os dados e
+                    realiza o processamento.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">
+                04
+            </div>
+
+            <div class="timeline-content">
+
+                <h3>
+                    Resultado
+                </h3>
+
+                <p>
+
+                    O sistema apresenta uma indicação
+                    do nível de emissão.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SIMULADOR
+===================================================== -->
+
+<section id="simulador"
+         class="simulator-section">
+
+    <div class="section-title">
+
+        <span>04 — DEMONSTRAÇÃO INTERATIVA</span>
+
+        <h2>
+            Central de <strong>Monitoramento</strong>
+        </h2>
+
+        <p>
+
+            Simule o funcionamento do sistema
+            durante a apresentação.
+
+        </p>
+
+    </div>
+
+
+    <div class="dashboard">
+
+
+        <!-- LADO ESQUERDO -->
+
+        <div class="dashboard-left">
+
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span>
+                        ECODRIVE CONTROL
+                    </span>
+
+                    <strong>
+                        MONITORAMENTO
+                    </strong>
+
+                </div>
+
+
+                <div id="system-indicator"
+                     class="system-indicator">
+
+                    <i></i>
+
+                    OFFLINE
+
+                </div>
+
+            </div>
+
+
+            <!-- VALOR PRINCIPAL -->
+
+            <div class="main-meter">
+
+                <span>
+                    NÍVEL DE EMISSÃO
+                </span>
+
+                <strong id="emission-value">
+                    25%
+                </strong>
+
+
+                <div class="meter">
+
+                    <div id="emission-bar"></div>
+
+                </div>
+
+
+                <div id="emission-status"
+                     class="status normal">
+
+                    🟢 EMISSÃO NORMAL
+
+                </div>
+
+            </div>
+
+
+            <!-- GASES -->
+
+            <div class="gas-monitor">
+
+
+                <div class="monitor-item">
+
+                    <div class="monitor-top">
+
+                        <span>
+                            CO₂
+                        </span>
+
+                        <strong id="co2-value">
+                            25%
+                        </strong>
+
+                    </div>
+
+                    <div class="mini-bar">
+
+                        <div id="co2-bar"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="monitor-item">
+
+                    <div class="monitor-top">
+
+                        <span>
+                            CO
+                        </span>
+
+                        <strong id="co-value">
+                            18%
+                        </strong>
+
+                    </div>
+
+                    <div class="mini-bar">
+
+                        <div id="co-bar"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="monitor-item">
+
+                    <div class="monitor-top">
+
+                        <span>
+                            HC
+                        </span>
+
+                        <strong id="hc-value">
+                            12%
+                        </strong>
+
+                    </div>
+
+                    <div class="mini-bar">
+
+                        <div id="hc-bar"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- LADO DIREITO -->
+
+        <div class="dashboard-right">
+
+
+            <!-- ARDUINO -->
+
+            <div class="arduino-board">
+
+
+                <div class="arduino-label">
+
+                    <span class="arduino-led"></span>
+
+                    ARDUINO
+
+                </div>
+
+
+                <div class="arduino-chip">
+
+                    <div class="chip-text">
+                        ATMEGA
+                    </div>
+
+                </div>
+
+
+                <div class="arduino-pins">
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                </div>
+
+
+                <div class="arduino-status">
+
+                    <span>
+                        SENSOR
+                    </span>
+
+                    <strong id="sensor-status">
+                        AGUARDANDO
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTROLES -->
+
+            <div class="dashboard-controls">
+
+                <h3>
+                    Painel de controle
+                </h3>
+
+
+                <button id="start-system"
+                        class="control-btn start">
+
+                    ▶ INICIAR SISTEMA
+
+                </button>
+
+
+                <button id="test-normal"
+                        class="control-btn normal-btn">
+
+                    🟢 SIMULAR NORMAL
+
+                </button>
+
+
+                <button id="test-warning"
+                        class="control-btn warning-btn">
+
+                    🟡 SIMULAR ATENÇÃO
+
+                </button>
+
+
+                <button id="test-danger"
+                        class="control-btn danger-btn">
+
+                    🔴 SIMULAR CRÍTICO
+
+                </button>
+
+
+                <button id="stop-system"
+                        class="control-btn stop">
+
+                    ■ PARAR SISTEMA
+
+                </button>
+
+
+                <button id="presentation-mode"
+                        class="control-btn presentation">
+
+                    ⛶ MODO APRESENTAÇÃO
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- GRÁFICO -->
+
+    <div class="chart-area">
+
+        <div class="chart-header">
+
+            <div>
+
+                <span>
+                    HISTÓRICO
+                </span>
+
+                <h3>
+                    Emissão em tempo real
+                </h3>
+
+            </div>
+
+            <strong id="chart-current">
+                25%
+            </strong>
+
+        </div>
+
+
+        <div id="chart"
+             class="chart">
+
+        </div>
+
+    </div>
+
+
+    <div class="simulation-warning">
+
+        <strong>
+            ⚠️ Representação escolar
+        </strong>
+
+        <p>
+
+            Os valores apresentados neste simulador
+            são ilustrativos e servem para demonstrar
+            o conceito do projeto. Eles não representam
+            medições reais de um veículo.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     IMPACTO
+===================================================== -->
+
+<section id="impacto"
+         class="section impact-section">
+
+    <div class="section-title">
+
+        <span>05 — IMPACTO</span>
+
+        <h2>
+            O que queremos <strong>mostrar?</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+
+        <div class="impact-main">
+
+            <div class="earth-icon">
+                🌎
+            </div>
+
+            <h3>
+                Pequenas ideias podem
+                gerar grandes mudanças.
+            </h3>
+
+            <p>
+
+                Nosso projeto mostra como conhecimentos
+                de programação, eletrônica e ciência
+                podem ser combinados para discutir
+                problemas ambientais.
+
+            </p>
+
+        </div>
+
+
+        <div class="impact-list">
+
+
+            <div>
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Incentivar a educação ambiental.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Demonstrar o uso do Arduino.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Relacionar tecnologia e sustentabilidade.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Estimular soluções inovadoras.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NÚMEROS
+===================================================== -->
+
+<section class="numbers-section">
+
+
+    <div class="number-box">
+
+        <strong data-count="1">
+            0
+        </strong>
+
+        <span>
+            Projeto
+        </span>
+
+    </div>
+
+
+    <div class="number-box">
+
+        <strong data-count="4">
+            0
+        </strong>
+
+        <span>
+            Etapas
+        </span>
+
+    </div>
+
+
+    <div class="number-box">
+
+        <strong data-count="3">
+            0
+        </strong>
+
+        <span>
+            Indicadores
+        </span>
+
+    </div>
+
+
+    <div class="number-box">
+
+        <strong data-count="100">
+            0
+        </strong>
+
+        <span>
+            % dedicação
+        </span>
+
+    </div>
+
+
+</section>
+
+
+<!-- =====================================================
+     EQUIPE
+===================================================== -->
+
+<section id="equipe"
+         class="section">
+
+    <div class="section-title">
+
+        <span>06 — NOSSA EQUIPE</span>
+
+        <h2>
+            Quem somos?
+        </h2>
+
+        <p>
+
+            Uma equipe unida pela tecnologia,
+            criatividade e sustentabilidade.
+
+        </p>
+
+    </div>
+
+
+    <div class="team-grid">
+
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                👨‍💻
+            </div>
+
+            <h3>
+                Kevin Willyan e Daniel França
+            </h3>
+
+            <span>
+                PROGRAMADOR
+            </span>
+
+            <p>
+                Desenvolvimento do site e programação.
+            </p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                🔌
+            </div>
+
+            <h3>
+                Grupo todo
+            </h3>
+
+            <span>
+                ELETRÔNICA
+            </span>
+
+            <p>
+                Montagem e funcionamento do Arduino.
+            </p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                🎨
+            </div>
+
+            <h3>
+                Kevin Willyan e David Silva
+            </h3>
+
+            <span>
+                DESIGN
+            </span>
+
+            <p>
+                Identidade visual e decoração.
+            </p>
+
+        </div>
+
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                📊
+            </div>
+
+            <h3>
+                Jhennyfer Rosa e Bianca Freitas
+            </h3>
+
+            <span>
+                PESQUISA
+            </span>
+
+            <p>
+                Pesquisa e organização das informações.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONCLUSÃO
+===================================================== -->
+
+<section class="conclusion">
+
+    <div class="conclusion-content">
+
+        <span>
+            EXPOTEC 2026
+        </span>
+
+        <h2>
+
+            O futuro começa
+            com nossas escolhas.
+
+        </h2>
+
+        <p>
+
+            ECODRIVE — tecnologia, ciência e
+            sustentabilidade trabalhando juntas.
+
+        </p>
+
+
+        <a href="#inicio"
+           class="btn btn-primary">
+
+            ↑ Voltar ao início
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        🌱 ECODRIVE
+
+    </div>
+
+    <p>
+        Projeto desenvolvido para a EXPOTEC 2026.
+    </p>
+
+    <span>
+        Tecnologia por um futuro mais sustentável.
+    </span>
+
+</footer>
+
+
+<!-- =====================================================
+     SCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
